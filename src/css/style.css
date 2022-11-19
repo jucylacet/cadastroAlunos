@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ECF0F1;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 10px;
+}
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+  height: 550px;
+  background-color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.247);
+  display: block;
+  align-items: center;
+}
+.container .formulario01 {
+  width: 100%;
+  height: 100%;
+  background-color: #494949;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container .formulario01 h1 {
+  color: white;
+  font-size: 2rem;
+}
+.container .formulario01 form {
+  padding: 0 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.container .formulario01 form h4 {
+  color: white;
+  font-weight: 300;
+}
+.container .formulario01 form input {
+  padding: 15px;
+  border: none;
+  background-color: #ECF0F1;
+  outline: none;
+}
+.container .formulario01 form .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 10px;
+}
+.container .formulario01 form .buttons button {
+  padding: 10px 10px;
+  border: 2px solid #fff;
+  background-color: #494949;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  transition: 0.2s;
+  outline: none;
+}
+.container .formulario01 form .buttons button:hover {
+  background-color: #fff;
+  color: #494949;
+}
+.container .formInfo {
+  width: 100%;
+  height: 100%;
+  color: #494949;
+  padding: 10px;
+  overflow: scroll;
+}
+.container .formInfo .formInfoHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.container .formInfo .formInfoHeader h2 {
+  font-size: 2rem;
+}
+.container .formInfo table {
+  width: 100%;
+  text-align: center;
+}
+.container .formInfo table th {
+  border: 1px solid #494949;
+  padding: 5px;
+}
+.container .formInfo table td {
+  color: black;
+  padding: 5px;
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    height: 90vh;
+  }
+  .container .formulario01 {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px 8px 0 0;
+  }
+  .container .formInfo {
+    width: 100%;
+    height: 100%;
+  }
+}
+

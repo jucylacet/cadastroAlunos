@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Alunos</title>
+    <link rel="shortcut icon" href="./src/assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <script src="https://kit.fontawesome.com/8ff11ff9ec.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script type="module" src="./src/js/index.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <section class="formulario01">
+            <h1>Ficha Cadastro de Alunos</h1>
+        </br>
+            <form>
+                <h4>Nome do aluno</h4>
+                <input type="text" id="nomeAluno">
+                <h4>Número de matrícula</h4>
+                <input type="text" id="matAluno">
+                <h4>Nota 1</h4>
+                <input type="text" id="nota1">
+                <h4>Nota 2</h4>
+                <input type="text" id="nota2">
+                <h4>Nota 3</h4>
+                <input type="text" id="nota3">
+
+                <div class="buttons">
+                    <button type="submit">Cadastrar</button>
+                    <button type="reset">Limpar</button>
+                </div>
+            </form>
+        </section>
+        <section class="formInfo">
+            <div class="formInfoHeader">
+                <h2>Informações</h2>
+                <i class="fa-solid fa-trash deleteAll" style="cursor: pointer;" title="Apagar tudo"></i>
+            </div>
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>Matrícula</th>
+                    <th>Nota 1</th>
+                    <th>Nota 2</th>
+                    <th>Nota 3</th>
+                    <th>Média</th>
+                    <th>Excluir</th>
+                </tr>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
